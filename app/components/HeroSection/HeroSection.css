@@ -1,0 +1,59 @@
+.box {
+    position: relative;
+    width: 300px;
+    height: 300px;
+}
+
+.section {
+    position: absolute;
+    width: 48%;
+    height: 48%;
+    background-color: transparent;
+    border: 2px solid #b0b0b0;
+    transition: background-color 0.3s, background-image 0.3s;
+}
+
+/* Rounded corners for each section */
+.section-rounded {
+    border-radius: 20px;
+}
+
+/* Top Left Section Styling */
+.section-rounded.top-left {
+    border-top-left-radius: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Bottom Left Section Styling */
+.section-rounded.bottom-left {
+    border-bottom-left-radius: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/* Bottom Right Section Styling */
+.section-rounded.bottom-right {
+    border-bottom-right-radius: 100%;
+    bottom: 0;
+    right: 0;
+}
+
+/* Hover effects to reveal background images */
+.section-rounded.top-left:hover {
+    background-image: url('/images/1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.section-rounded.bottom-left:hover {
+    background-image: url('/images/2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.section-rounded.bottom-right:hover {
+    background-image: url('/images/3.jpg');
+    background-size: cover;
+    background-position: center;
+}
