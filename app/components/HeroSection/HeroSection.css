@@ -1,7 +1,11 @@
+.hero{
+    background-color: rgb(12, 36, 25);
+}
+
 .box {
     position: relative;
-    width: 300px;
-    height: 300px;
+    width: 700px;
+    height: 700px;
   }
   
   .section {
@@ -9,7 +13,7 @@
     width: 48%;
     height: 48%;
     background-color: transparent;
-    border: 2px solid #b0b0b0;
+    border: 1px solid #525252;
     transition: all 0.3s;
   }
   
@@ -37,6 +41,15 @@
     border-bottom-right-radius: 100%;
     bottom: 0;
     right: 0;
+  }
+
+  /* Example CSS for smoother transitions */
+.transition-opacity {
+    transition: opacity 1s ease-in-out;
+  }
+
+  .section:hover {
+    border-color: gold;
   }
   
   
