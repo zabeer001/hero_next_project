@@ -32,7 +32,7 @@ const HeroSection = ({ className }) => {
             layout="fill"
             // objectFit="cover"
             className={`absolute transition-opacity duration-300 ${
-              hoveredSection === "top-left" ? "opacity-100" : "opacity-0"
+              hoveredSection === "top-left" ? "opacity-10" : "opacity-0"
             }`}
           />
           <Image

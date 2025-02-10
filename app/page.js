@@ -3,7 +3,7 @@ import OtherSection from './components/Othersection/OtherSection';
 
 export default function RoundedSections() {
   return (
-    <div className="h-[200vh] relative">
+    <div className="">
       <HeroSection className ="z-[1]" />
      <OtherSection className="z-50 h-screen bg-white" />
 
