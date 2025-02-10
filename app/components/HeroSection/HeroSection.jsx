@@ -1,15 +1,19 @@
 "use client"
 
-import { useState } from "react"
+import { useRef, useState } from "react"
 import Image from "next/image"
 import "./HeroSection.css"
 
 import image1 from "./images/1.jpg"
 import image2 from "./images/2.jpg"
 import image3 from "./images/3.jpg"
+import useOuterBlur from "../hooks/useOuterBlur"
 
 const HeroSection = ({ className }) => {
-  const [hoveredSection, setHoveredSection] = useState(null)
+  const [hoveredSection, setHoveredSection] = useState(null);
+  const ref = useRef(null)
+
+  useOuterBlur(ref)
 
   const handleMouseEnter = (position) => {
     setHoveredSection(position)
@@ -60,6 +64,7 @@ const HeroSection = ({ className }) => {
           <div className="box w-[300px] h-[300px]">
             {/* Top Left Section */}
             <div
+            ref={ref}
               id="tls"
               className={`section section-rounded top-left w-[48%] h-[48%] transition-all duration-300  ${
                 hoveredSection === "top-left" ? "bg-transparent" : "bg-white bg-opacity-100"
