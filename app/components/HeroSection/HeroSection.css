@@ -1,5 +1,5 @@
 .hero{
-  background-color: rgb(12, 36, 25);
+  background-color: rgb(0, 0, 0);
 }
 
 .notBlur{
@@ -32,18 +32,17 @@ z-index: 99999999;
   border-top-left-radius: 100%;
   top: 0;
   left: 0;
-  /* background-color: transparent; Default background */
+  background-color: transparent; /* Default background */
   transition: background-image 1s ease-in-out, background-color 1s ease-in-out;
-
   clip-path: path("M6% 100% C2% 100% 0% 96% 0% 92% C1% 70% 12% 48% 30% 30% C48% 12% 70% 1% 92% 0% C96% 0% 100% 2% 100% 6% L100% 92% C100% 96% 96% 100% 92% 100% L6% 100%");
 }
 
 /* Apply background image on hover */
 .section-rounded.top-left:hover {
-  background-image: url(1.jpg);
+background-image: url(1.jpg);
   background-size: cover;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0); 
+  
   /* body backgorund will be faded without this part */
 }
 
