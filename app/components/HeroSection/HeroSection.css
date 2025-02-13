@@ -17,7 +17,7 @@ z-index: 99999999;
   height: 48%;
   background-color: transparent;
   border: 1px solid #525252;
-  transition: all 0.3s;
+  transition: all 1s;
   
   
 }
@@ -28,22 +28,25 @@ z-index: 99999999;
 }
 
 /* Top Left Section Styling */
+/* Top Left Section Styling */
 .section-rounded.top-left {
   border-top-left-radius: 100%;
   top: 0;
   left: 0;
-  background-color: transparent; /* Default background */
-  transition: background-image 1s ease-in-out, background-color 1s ease-in-out;
+  background-color: transparent;
+
+  background-size: 100%;
+  background-position: center;
+  transition: all 5s cubic-bezier(0.25, 0.1, 0.25, 1);
   clip-path: path("M6% 100% C2% 100% 0% 96% 0% 92% C1% 70% 12% 48% 30% 30% C48% 12% 70% 1% 92% 0% C96% 0% 100% 2% 100% 6% L100% 92% C100% 96% 96% 100% 92% 100% L6% 100%");
 }
 
 /* Apply background image on hover */
 .section-rounded.top-left:hover {
-background-image: url(1.jpg);
-  background-size: cover;
-  background-position: center;
-  
-  /* body backgorund will be faded without this part */
+  background-image: url(1.jpg);
+  background-size: 300%;
+  opacity: 2; /* Gradually appear */
+  transition: all 5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 /* Bottom Left Section Styling */

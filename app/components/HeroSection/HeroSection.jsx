@@ -35,27 +35,24 @@ const HeroSection = ({ className }) => {
             alt="Background Image 1"
             layout="fill"
             // objectFit="cover"
-            className={`absolute transition-opacity duration-300 ${
-              hoveredSection === "top-left" ? "opacity-20" : "opacity-0"
-            }`}
+            className={`absolute transition-opacity duration-300 ${hoveredSection === "top-left" ? "opacity-15" : "opacity-0"
+              }`}
           />
           <Image
             src={image2 || "/placeholder.svg"}
             alt="Background Image 2"
             layout="fill"
             objectFit="cover"
-            className={`absolute transition-opacity duration-300 ${
-              hoveredSection === "bottom-left" ? "opacity-50" : "opacity-0"
-            }`}
+            className={`absolute transition-opacity duration-300 ${hoveredSection === "bottom-left" ? "opacity-50" : "opacity-0"
+              }`}
           />
           <Image
             src={image3 || "/placeholder.svg"}
             alt="Background Image 3"
             layout="fill"
             objectFit="cover"
-            className={`absolute transition-opacity duration-300 ${
-              hoveredSection === "bottom-right" ? "opacity-50" : "opacity-0"
-            }`}
+            className={`absolute transition-opacity duration-300 ${hoveredSection === "bottom-right" ? "opacity-50" : "opacity-0"
+              }`}
           />
         </div>
 
@@ -64,11 +61,9 @@ const HeroSection = ({ className }) => {
           <div className="box w-[300px] h-[300px]">
             {/* Top Left Section */}
             <div
-            ref={ref}
+              ref={ref}
               id="tls"
-              className={`section section-rounded top-left w-[48%] h-[48%] transition-all duration-300  ${
-                hoveredSection === "top-left" ? "bg-transparent" : "bg-white bg-opacity-100"
-              } `}
+              className={` section section-rounded  top-left transition-all section section-rounded top-left w-[48%] h-[48%] duration-300`}
               onMouseEnter={() => setHoveredSection("top-left")}
               onMouseLeave={() => setHoveredSection(null)}
             >
@@ -77,9 +72,8 @@ const HeroSection = ({ className }) => {
 
             {/* Bottom Left Section */}
             <div
-              className={`section section-rounded bottom-left w-[48%] h-[48%] transition-all duration-300 ${
-                hoveredSection === "bottom-left" ? "bg-transparent" : "bg-white bg-opacity-50"
-              }`}
+              className={`section section-rounded bottom-left w-[48%] h-[48%] transition-all duration-300 ${hoveredSection === "bottom-left" ? "bg-transparent" : "bg-white bg-opacity-50"
+                }`}
               onMouseEnter={() => setHoveredSection("bottom-left")}
               onMouseLeave={() => setHoveredSection(null)}
             >
@@ -88,9 +82,8 @@ const HeroSection = ({ className }) => {
 
             {/* Bottom Right Section */}
             <div
-              className={`section section-rounded bottom-right w-[48%] h-[48%] transition-all duration-300 ${
-                hoveredSection === "bottom-right" ? "bg-transparent" : "bg-white bg-opacity-50"
-              }`}
+              className={`section section-rounded bottom-right w-[48%] h-[48%] transition-all duration-300 ${hoveredSection === "bottom-right" ? "bg-transparent" : "bg-white bg-opacity-50"
+                }`}
               onMouseEnter={() => handleMouseEnter("bottom-right")}
               onMouseLeave={() => setHoveredSection(null)}
             >
